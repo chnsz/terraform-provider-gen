@@ -1,0 +1,44 @@
+*.dll
+*.exe
+.DS_Store
+bin/
+modules-dev/
+/pkg/
+.vagrant/
+*.backup
+*.log
+*.bak
+*~
+.*.swp
+.idea
+.vscode
+*.iml
+*.test
+*.pem
+*.cov
+*.html
+
+# Test exclusions
+!command/test-fixtures/**/*.tfstate
+!command/test-fixtures/**/.terraform/
+
+dist
+.devcontainer
+.vscode
+
+# Ignore local test files for terraform examples
+.terraform.lock.hcl
+.terraform/
+*.tfstate
+*.tfplan
+# terraform.tfvars is allowed to be committed
+*.auto.tfvars
+
+请阅读项目代码，生成一份skill，要求如下：
+- 拆分为多个文件如下：
+ * 01-setup.md：项目结构介绍
+ * 02-resource-coding.md：resource编码开发技能，以services/vpc/resource_huaweicloud_vpc.go为例介绍
+ * 03-datasource-coding.md：datasource编码开发技能，以services/vpc/data_source_huaweicloud_vpcs.go为例介绍
+ * 04-testing.md：单元测试开发技能
+ * 05-documentation.md：文档开发技能
+ * 06-best-practices.md：最佳实践开发技能，如API调用、错误处理、waitFor、编码规范等等逻辑。
