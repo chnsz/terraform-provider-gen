@@ -107,7 +107,7 @@ description: "Develops Huawei Cloud Terraform Provider resources and data source
 
 ### 创建新 Data Source
 
-1. 参考 [03-datasource-coding.md](./03-datasource-coding.md) 了解 Data Source 结构
+1. 参考 [03-datasource-coding.md](./03-datasource-coding.md) 了解 Data Source 的创建过程
 2. 在 `services/<service>/` 目录下创建 `data_source_huaweicloud_<name>.go`
 3. 实现 Read 函数
 4. 在 `provider.go` 中注册数据源
