@@ -98,20 +98,49 @@ description: "Develops Huawei Cloud Terraform Provider resources and data source
 
 ### 创建新 Resource
 
-1. 参考 [02-resource-coding.md](./02-resource-coding.md) 了解 Resource 的创建过程
-2. 在 `services/<service>/` 目录下创建 `resource_huaweicloud_<name>.go`
-3. 实现 CRUD 函数
-4. 在 `provider.go` 中注册资源
-5. 参考 [04-testing.md](./04-testing.md) 编写测试
-6. 参考 [05-documentation.md](./05-documentation.md) 编写文档
+- 以下步骤不能跳过，所有步骤都需要执行
+
+#### Step 1 生成 Resource
+
+- 参考 [02-resource-coding.md](./02-resource-coding.md) 生成 Resource
+- 严格按照文档步骤执行，所有步骤都需要执行，不能跳过，也不能随意添加其他步骤
+
+#### Step 2 生成测试用例
+
+- 参考 [04-testing.md](./04-testing.md) 生成对应的测试用例
+
+#### Step 3 生成文档
+
+- 参考 [05-documentation.md](./05-documentation.md) 生成对应的文档
+
+#### Step 4 将生成结果放到对应目录下
+
+1. Data Source： `huaweicloud/services/<service>/`
+2. 测试用例： `huaweicloud/services/acceptance/<service>/`
+3. 文档： `docs/resources/`
 
 ### 创建新 Data Source
 
-1. 参考 [03-datasource-coding.md](./03-datasource-coding.md) 了解 Data Source 的创建过程
-2. 在 `services/<service>/` 目录下创建 `data_source_huaweicloud_<name>.go`
-3. 实现 Read 函数
-4. 在 `provider.go` 中注册数据源
-5. 编写测试和文档
+- 以下步骤不能跳过，所有步骤都需要执行
+
+#### Step 1 生成 data source
+
+- 参考 [03-datasource-coding.md](./03-datasource-coding.md) 生成 Data Source
+- 严格按照文档步骤执行，所有步骤都需要执行，不能跳过，也不能随意添加其他步骤
+
+#### Step 2 生成测试用例
+
+- 参考 [04-testing.md](./04-testing.md) 生成对应的测试用例
+
+#### Step 3 生成文档
+
+- 参考 [05-documentation.md](./05-documentation.md) 生成对应的文档
+
+#### Step 4 将生成结果放到对应目录下
+
+1. Data Source： `huaweicloud/services/<service>/`
+2. 测试用例： `huaweicloud/services/acceptance/<service>/`
+3. 文档： `docs/data-sources/`
 
 ## 开发流程
 
