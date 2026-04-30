@@ -119,6 +119,10 @@ description: "Develops Huawei Cloud Terraform Provider resources and data source
 2. 测试用例： `huaweicloud/services/acceptance/<service>/`
 3. 文档： `docs/resources/`
 
+#### Step 5 通用代码审查
+
+参考 `06-best-practices.md` 对生成代码进行一次 **质量规范自检**（而不是替代资源/数据源的生成步骤）
+
 ### 创建新 Data Source
 
 - 以下步骤不能跳过，所有步骤都需要执行
@@ -141,6 +145,10 @@ description: "Develops Huawei Cloud Terraform Provider resources and data source
 1. Data Source： `huaweicloud/services/<service>/`
 2. 测试用例： `huaweicloud/services/acceptance/<service>/`
 3. 文档： `docs/data-sources/`
+
+#### Step 5 通用代码审查
+
+参考 `06-best-practices.md` 对生成代码进行一次 **质量规范自检**（而不是替代资源/数据源的生成步骤）。
 
 ## 开发流程
 
